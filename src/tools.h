@@ -8,27 +8,32 @@ using Eigen::VectorXd;
 using namespace std;
 
 class Tools {
-public:
+ public:
   /**
-  * Constructor.
-  */
+   * Constructor.
+   */
   Tools();
 
   /**
-  * Destructor.
-  */
+   * Destructor.
+   */
   virtual ~Tools();
 
   /**
-  * A helper method to calculate RMSE.
-  */
-  VectorXd CalculateRMSE(const vector<VectorXd> &estimations, const vector<VectorXd> &ground_truth);
+   * A helper method to calculate RMSE.
+   */
+  VectorXd CalculateRMSE(const vector<VectorXd> &estimations,
+                         const vector<VectorXd> &ground_truth);
 
   /**
-  * A helper method to calculate Jacobians.
-  */
-  MatrixXd CalculateJacobian(const VectorXd& x_state);
+   * A helper method to calculate Jacobians.
+   */
+  MatrixXd CalculateJacobian(const VectorXd &x_state);
 
+  /**
+   * A helper method to convert the state to polar coordinates.
+   */
+  VectorXd ConvertToPolar(const VectorXd &x_state);
 };
 
 #endif /* TOOLS_H_ */
