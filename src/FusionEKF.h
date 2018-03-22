@@ -10,7 +10,7 @@
 #include "tools.h"
 
 class FusionEKF {
- public:
+ public: 
   /**
    * Constructor.
    */
