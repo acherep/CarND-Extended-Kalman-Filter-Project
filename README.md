@@ -3,7 +3,7 @@ Self-Driving Car Engineer Nanodegree Program
 
 <img src="./project_video_output.gif" width="400">
 
-[Link to my video result](./project_video_output.mp4)
+[Link to the video result](./project_video_output.mp4)
 
 In this project I utilize a kalman filter to estimate the state of a moving object of interest with noisy lidar and radar measurements. Passing the project requires obtaining RMSE values that are lower than the tolerance  [0.11, 0.11, 0.52, 0.52]. 
 
